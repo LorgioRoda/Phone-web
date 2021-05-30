@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
-    "dev": "DEBUG=server:* nodemon ./bin/www",
-    "dev-windows": "nodemon ./bin/www"
+    "dev": "nodemon -e '*' ./bin/www"
   },
   "dependencies": {
     "connect-mongo": "^4.4.1",

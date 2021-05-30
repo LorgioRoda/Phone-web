@@ -1,11 +1,11 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 mongoose
   .connect(`${process.env.DBURL}`, {
     useNewUrlParser: true,
-    userUnifiedTopology: true
+    useUnifiedTopology: true,
   })
-  .then(()=> console.log("Connect to MONGO! 🎉"))
-  .catch(() => console.error(error))
+  .then(() => console.log("Conectado al Mongo!"))
+  .catch((error) => console.error(error));
 
-module.exports = mongoose
+module.exports = mongoose;

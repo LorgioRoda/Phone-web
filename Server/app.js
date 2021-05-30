@@ -10,7 +10,9 @@ const app = express();
 require("./config/middleware.config")(app);
 require("./config/cors.config")(app);
 
-const index = require("./routes/index");
+//Prefijos
+const index = require("./routes/index.routes");
+
 app.use("/", index);
 
 module.exports = app;
