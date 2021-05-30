@@ -5,7 +5,7 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("Conectado al Mongo!"))
+  .then(() => console.log("Connect Mongo! 🎉"))
   .catch((error) => console.error(error));
 
 module.exports = mongoose;
