@@ -15,5 +15,9 @@ require("./config/cors.config")(app);
 const index = require("./routes/index.routes");
 
 app.use("/", index);
+//Catch 404
+app.use((req, res, next) => {
+  return res.status(404).json({ message: 'Not found' });
+});
 
 module.exports = app;
