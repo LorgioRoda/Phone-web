@@ -13,7 +13,7 @@ require("./config/cors.config")(app);
 
 //Prefijos
 const index = require("./routes/index.routes");
-app.use("/", index);
+app.use("/api", index);
 
 //Catch 404
 app.use((req, res, next) => {
